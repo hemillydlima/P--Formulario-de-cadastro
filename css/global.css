@@ -1,0 +1,28 @@
+:root{
+    /* BRAND */
+    --brand-light:#F67841;
+    --brand-mid:#F3541C;
+    --brand-dark:#E43A12;
+
+    /* TEXT */
+    --text-primary:#292524;
+    --text-secndary:#57534E;
+    --text-terniary:#8F8881;
+    --text-highlight:#E43A12;
+
+    /* SURFACE */
+    --surface-primary:#FFFFFF;
+    --surface-secondary:#FEE7D6;
+    --surface-disabled:#E7E5E4;
+
+    /* STROKE  */
+    --stroke-default:#D6D3D1;
+    --stroke-highlight:#F3541C;
+
+    /* FONT  */
+    --font-family:"Poppins", sans-serif;
+    --heading1:bold 32px/120% var(--font-family);
+    --heading2:bold 24px/120% var(--font-family);
+    --heading3:bold 20px/120% var(--font-family);
+    --heading4:bold 16px/120% var(--font-family);
+}
