@@ -1,5 +1,60 @@
 #app{
+    
     display: grid;
     grid-template-columns: 51.25% 48.75%;
     height: 100vh;
+    overflow: hidden;
+}
+main{
+    padding: 4rem;
+    overflow: auto;
+    background-color: var(--surface-primary);
+
+    & .main-container{
+        max-width: 33rem;
+        margin-left: auto;
+    }
+
+    & .back{
+        display: flex;
+        gap: 8px;
+       
+    }
+        /* FONTES */
+    & h1{
+        font: var(--heading2);
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    & p{
+        font: var(--heading3);
+        color: var(--text-secondary);
+    }
+    
+}
+aside{
+
+    padding: 4rem;
+    background-color: var(--surface-secondary);
+
+    & .aside-container{
+        max-width: 33rem;
+    }
+
+        /* FONTES */
+    & h2{
+        font: var(--heading1);
+    }
+    & p{
+        font: var(--heading3);
+        color: var(--text-secondary);
+        margin: 8px auto 0;
+    }
+    & img{
+        margin-top: 2rem;
+    }
+    & strong{
+        color: var(--text-highlight);
+    }
 }
