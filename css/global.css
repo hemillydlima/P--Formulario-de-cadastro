@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     /* BRAND */
     --brand-light:#F67841;
@@ -25,4 +30,9 @@
     --heading2:bold 24px/120% var(--font-family);
     --heading3:bold 20px/120% var(--font-family);
     --heading4:bold 16px/120% var(--font-family);
+}
+body{
+    margin: 64px;
+    overflow:hidden;
+   
 }
