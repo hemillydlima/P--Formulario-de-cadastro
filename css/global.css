@@ -29,7 +29,7 @@
     --heading1:bold 40px/120% var(--font-family);
     --heading2:700 24px/125% var(--font-family);
     --heading3:400 16px/150% var(--font-family);
-    --heading4:bold 16px/120% var(--font-family);
+    --heading4:700 16px/125% var(--font-family);
 }
 body{
    overflow: hidden; 

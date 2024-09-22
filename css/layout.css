@@ -2,7 +2,7 @@
     
     display: grid;
     grid-template-columns: 51.25% 48.75%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 main{
@@ -31,6 +31,19 @@ main{
         font: var(--heading3);
         color: var(--text-secondary);
     }
+
+    /* FORM´S */
+
+    & legend{
+        font: var(--heading4);
+        color: var(--text-primary);
+    }
+    & fieldset{
+        border: none;
+        margin-top: 48px;
+        margin-bottom: 24px;
+    }
+
     
 }
 aside{
@@ -53,6 +66,8 @@ aside{
     }
     & img{
         margin-top: 2rem;
+        max-width: 33rem;
+        max-height: 33rem;
     }
     & strong{
         color: var(--text-highlight);
