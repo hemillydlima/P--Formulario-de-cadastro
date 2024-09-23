@@ -25,86 +25,45 @@
                     seu filho na escola de educação infantil 
                     Estrelas do Amanhã.</p>
 
-                <form>
+                <form id="form" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Informações da criança</legend>
 
                         <div id="input-all">
                             <label for="fullname">Nome Completo</label>
-                            <br>
-                            <input type="text" id="fullname">
-                            <br>
+                            <input type="text" id="fullname"
+                            placeholder="Maria De Souza"
+                            required>
+                            
                             <label for="birth">Data de nascimanto</label>
-                            <br>
-                            <input type="date" name="nscimento" id="birth">
+                            <input type="date" name="nscimento" id="birth"
+                            required>
                         </div>
                         <div id="select-all">
                             <label for="gender">Sexo</label>
-                            <br>
-                            <select name="gender" id="gender">
+                            <select name="gender" id="gender"
+                            required>
+
                              <option value="Female">feminino</option>
                              <option value="male">Masculino</option>
                              <option value="na">Prefiro não dizer</option>
                             </select>
                         <div id="text-all">
                             <label for="info-personal">Informações pessoais</label>
-                            <br>
-                            <textarea name="personal information" id="info-personal">
+                            <textarea name="personal information" id="info-personal"
+                            placeholder="problemas de saúde">
                             </textarea>
                         </div>   
-                        <div id="certificade">
+                        <div id="file-all">
                             <label for="certificade">Certidão de nascimento</label>
-                            <br>
-                            <input type="file" name="birth certificade" id="certificade">
+                            <input type="file" name="birth certificade" id="certificade"
+                            required>
+                            <img src="./icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para <br> selecionar o arquivo</p>
                         </div> 
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Endereço residencial</legend>
-
-                        <div id="address-all">
-                            <label for="cep">CEP</label>
-                            <br>
-                            <input type="number" name="cep" id="cep">
-                            <br>
-                            <label for="street">Rua</label>
-                            <input type="text" name="street" id="street">
-
-                            <label for="number">Number</label>
-                            <input type="number" name="number" id="number">
-                            <br>
-                            <label for="city">Cidade</label>
-                            <input type="text" name="city" id="city">
-
-                            <label for="state">Estado</label>
-                            <input type="text" name="state" id="">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Informações do responsável</legend>
-
-                        <div id="info-responsive">
-                            <label for="responsible">Nome do responsável</label>
-                            <br>
-                            <input type="text" name="name of resposible" id="responsible">
-                            <br>
-                            <label for="telephone">Telefone</label>
-                            <br>
-                            <input type="number" name="telephone" id="telephone">
-                            <br>
-                            <label for="mail">Email</label>
-                            <br>
-                            <input type="email" name="email" id="mail">
-                        </div>
-                    </fieldset>
-                    
-                    <!-- FAZER A PARTE DE SELECIONAR OPCOES -->
-                    <fieldset>
-                        <legend>Opções de matrícula</legend>
-
-                        <label for="turno">Selecione o turno de estudo</label>
-                        <input type="radio" name="" id="turno">
-                    </fieldset>
+                        
+                </fieldset>
                 </form>    
             </div>
         </main>

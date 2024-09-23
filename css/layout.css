@@ -2,25 +2,23 @@
     
     display: grid;
     grid-template-columns: 51.25% 48.75%;
-    height: auto;
-    overflow: hidden;
+    height: 100vh;
 }
 main{
     padding: 4rem;
     overflow: auto;
-    background-color: var(--surface-primary);
 
     & .main-container{
         max-width: 33rem;
         margin-left: auto;
     }
-
+    
     & .back{
         display: flex;
         gap: 8px;
-       
+        
     }
-        /* FONTES */
+    /* FONTES */
     & h1{
         font: var(--heading2);
         margin-top: 1rem;
@@ -30,31 +28,25 @@ main{
     & p{
         font: var(--heading3);
         color: var(--text-secondary);
+        margin-bottom: 3rem;
     }
+    
 
-    /* FORM´S */
-
-    & legend{
-        font: var(--heading4);
-        color: var(--text-primary);
-    }
-    & fieldset{
-        border: none;
-        margin-top: 48px;
-        margin-bottom: 24px;
-    }
-
+    
+   
+    
     
 }
 aside{
-
+    
     padding: 4rem;
     background-color: var(--surface-secondary);
-
+    overflow: hidden;
+    
     & .aside-container{
         max-width: 33rem;
     }
-
+    
         /* FONTES */
     & h2{
         font: var(--heading1);

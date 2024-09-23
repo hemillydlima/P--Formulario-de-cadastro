@@ -16,7 +16,7 @@
     --text-highlight:#E43A12;
 
     /* SURFACE */
-    --surface-primary:#FFFFFF;
+    --surface-primary:#cdcdcd;
     --surface-secondary:#FEE7D6;
     --surface-disabled:#E7E5E4;
 
@@ -32,7 +32,7 @@
     --heading4:700 16px/125% var(--font-family);
 }
 body{
-   overflow: hidden; 
+   overflow: hidden;
    font-family: var(--font-family);
 
 }
