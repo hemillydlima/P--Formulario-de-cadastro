@@ -33,16 +33,17 @@
                             <label for="fullname">Nome Completo</label>
                             <input type="text" id="fullname"
                             placeholder="Maria De Souza"
-                            required>
+                            >
                             
                             <label for="birth">Data de nascimanto</label>
                             <input type="date" name="nscimento" id="birth"
-                            required>
+                            
+                            >
                         </div>
                         <div id="select-all">
                             <label for="gender">Sexo</label>
                             <select name="gender" id="gender"
-                            required>
+                            >
 
                              <option value="Female">feminino</option>
                              <option value="male">Masculino</option>
@@ -51,17 +52,83 @@
                         <div id="text-all">
                             <label for="info-personal">Informações pessoais</label>
                             <textarea name="personal information" id="info-personal"
-                            placeholder="problemas de saúde">
+                            value="Condições Médicas"
+                           >
                             </textarea>
                         </div>   
                         <div id="file-all">
                             <label for="certificade">Certidão de nascimento</label>
+                            <div class="file-zone">
                             <input type="file" name="birth certificade" id="certificade"
-                            required>
-                            <img src="./icons/cloud-upload.svg" alt="">
-                            <p>Clique aqui para <br> selecionar o arquivo</p>
+                            >
+                            
+                            <img class="cloud" src="./icons/cloud-upload (1).svg" alt="">
+                            <p>Clique aqui para <br> selecionar o arquivo</p></div>
+                        
                         </div> 
                         </div>
+                        <legend>Endereço residencial</legend>
+                        
+                        <div id="address-all">
+                            <label for="cep">CEP</label>
+                            <input type="number" name="cep" id="cep">
+                          <div class="disable">
+                            <div class="street">
+                            <label for="street">Rua</label>
+                            <input type="text" name="street" id="street"
+                            placeholder="Rua Goiabeira"
+                            disabled>
+                        </div>
+                            <div class="number">
+                            <label for="number">Número</label>
+                            <input type="number" name="number" id="number"
+                            value="123">
+                        </div>
+                        </div>   
+                          <div class="disable-2"> 
+                        <div class="city">
+                            <label for="city">Cidade</label>
+                            <input type="text" name="city" id="city"
+                            placeholder="Curitiba"
+                            disabled>
+                        </div> 
+                        <div class="state">    
+                            <label for="state">Estado</label>
+                            <input type="text" name="state" id=""
+                            placeholder="São Paulo"
+                            disabled>
+                        </div>    
+                        </div>
+                        </div>
+                        <legend>Informações do responsável</legend>
+                        
+                        <div id="info-responsive">
+                            <div class="responsive"> 
+                            <label for="responsible">Nome do responsável</label>
+                            <input type="text" name="name of resposible" id="responsible"
+                            value="Sonia De Souza">
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+                          
+                            <label for="telephone">Telefone</label>
+                            <input type="number" name="telephone" id="telephone"
+                            placeholder="(41) 9 8854-4557">
+                           
+                        
+
+                            <div class="erro">
+                            <label for="mail">Email</label>
+                            <input type="email" name="email" id="mail"
+                            required>
+                                <img src="./icons/alert-circle.svg" alt="">
+                                <span>Insira um E-mail válido</span>
+                            </div>
+                        </div>
+                    
+                        <legend>Opções de matrícula</legend>
+                        
+                        <label for="turno">Selecione o turno de estudo</label>
+                        <input type="radio" name="" id="turno">
                         
                 </fieldset>
                 </form>    

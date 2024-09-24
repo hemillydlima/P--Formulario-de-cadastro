@@ -1,0 +1,26 @@
+@import url(./guardian.css);
+.disable{
+    gap: 20px;
+
+    display: flex;
+    & .street{
+        flex: 2;
+
+    }
+    & .number{
+        flex: 1;   
+     }
+}
+
+.disable-2{
+    gap: 20px;
+    display: flex;
+
+    & .city{
+        flex: 2;
+    }
+
+    & .state{
+        flex: 1;
+    }
+}
