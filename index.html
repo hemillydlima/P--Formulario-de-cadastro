@@ -11,124 +11,136 @@
 </head>
 <body>
 
-    <div id="app">
+<div id="app">
 
 
-        <main>
-            <div class="main-container">
-                <div class="back">
-                 <img src="./icons/arrow-left-02.svg" alt="seta pra a esquerda">
-                 <span>Voltar</span>
-                </div>
+    <main>
+        <div class="main-container">
+            <div class="back">
+                <img src="./icons/arrow-left-02.svg" alt="seta pra a esquerda">
+                <span>Voltar</span>
+            </div>
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular 
                     seu filho na escola de educação infantil 
                     Estrelas do Amanhã.</p>
 
-                <form id="form" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>Informações da criança</legend>
+            <form id="form" method="post" enctype="multipart/form-data">
+                    
+            <fieldset>
+                <legend>Informações da criança</legend>
 
-                        <div id="input-all">
-                            <label for="fullname">Nome Completo</label>
-                            <input type="text" id="fullname"
-                            placeholder="Maria De Souza"
-                            >
+                    <div id="input-all">
+                        <label for="fullname">Nome Completo</label>
+                        <input type="text" id="fullname" class="margin"
+                        placeholder="Maria De Souza">
                             
-                            <label for="birth">Data de nascimanto</label>
-                            <input type="date" name="nscimento" id="birth"
-                            
-                            >
-                        </div>
-                        <div id="select-all">
-                            <label for="gender">Sexo</label>
-                            <select name="gender" id="gender"
-                            >
+                        <label for="birth">Data de nascimanto</label>
+                        <input type="date" name="nscimento" id="birth"
+                        class="margin">
+                    </div>
 
-                             <option value="Female">feminino</option>
-                             <option value="male">Masculino</option>
-                             <option value="na">Prefiro não dizer</option>
-                            </select>
-                        <div id="text-all">
-                            <label for="info-personal">Informações pessoais</label>
-                            <textarea name="personal information" id="info-personal"
-                            value="Condições Médicas"
-                           >
-                            </textarea>
-                        </div>   
-                        <div id="file-all">
-                            <label for="certificade">Certidão de nascimento</label>
+                    <div id="select-all">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender" class="margin">
+                            <option value="Female">feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não dizer</option>
+                        </select>
+
+                    <div id="text-all">
+                        <label for="info-personal">Informações pessoais</label>
+                        <textarea name="personal information" id="info-personal" class="margin"
+                        value="Condições Médicas">
+                        </textarea>
+                    </div> 
+
+                    <div id="file-all">
+                        <label for="certificade">Certidão de nascimento</label>
                             <div class="file-zone">
-                            <input type="file" name="birth certificade" id="certificade"
-                            >
-                            
-                            <img class="cloud" src="./icons/cloud-upload (1).svg" alt="">
-                            <p>Clique aqui para <br> selecionar o arquivo</p></div>
+                                <input type="file" name="birth certificade" id="certificade"
+                                class="margin">
+                                <img class="cloud" src="./icons/cloud-upload (1).svg" alt="">
+                                <p>Clique aqui para <br> selecionar o arquivo</p></div>
                         
-                        </div> 
-                        </div>
-                        <legend>Endereço residencial</legend>
+                            </div> 
+                    </div>
+
+                <legend>Endereço residencial</legend>
                         
-                        <div id="address-all">
-                            <label for="cep">CEP</label>
-                            <input type="number" name="cep" id="cep">
-                          <div class="disable">
+                    <div id="address-all">
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep"
+                        class="margin">
+                            <div class="disable">
+
                             <div class="street">
-                            <label for="street">Rua</label>
-                            <input type="text" name="street" id="street"
-                            placeholder="Rua Goiabeira"
-                            disabled>
-                        </div>
+                                <label for="street">Rua</label>
+                                <input type="text" name="street" id="street"
+                                class="margin"
+                                placeholder="Rua Goiabeira"
+                                disabled>
+
+                            </div>
+
                             <div class="number">
-                            <label for="number">Número</label>
-                            <input type="number" name="number" id="number"
-                            value="123">
-                        </div>
-                        </div>   
-                          <div class="disable-2"> 
+                                <label for="number">Número</label>
+                                <input type="number" name="number" id="number" class="margin"
+                                value="123">
+
+                             </div>
+                    </div> 
+
+                    <div class="disable-2"> 
+
                         <div class="city">
                             <label for="city">Cidade</label>
-                            <input type="text" name="city" id="city"
+                            <input type="text" name="city" id="city" class="margin"
                             placeholder="Curitiba"
                             disabled>
                         </div> 
-                        <div class="state">    
+
+                        <div class="state">   
                             <label for="state">Estado</label>
-                            <input type="text" name="state" id=""
-                            placeholder="São Paulo"
+                            <input type="text" name="state" id="state" class="margin"
+                            placeholder="SP"
                             disabled>
+
                         </div>    
-                        </div>
-                        </div>
-                        <legend>Informações do responsável</legend>
-                        
-                        <div id="info-responsive">
-                            <div class="responsive"> 
-                            <label for="responsible">Nome do responsável</label>
-                            <input type="text" name="name of resposible" id="responsible"
-                            value="Sonia De Souza">
-                            <small>Principal responsável legal e contato de emergência</small>
-                        </div>
-                          
-                            <label for="telephone">Telefone</label>
-                            <input type="number" name="telephone" id="telephone"
-                            placeholder="(41) 9 8854-4557">
-                           
+                    </div>
                         
 
-                            <div class="erro">
-                            <label for="mail">Email</label>
-                            <input type="email" name="email" id="mail"
-                            required>
-                                <img src="./icons/alert-circle.svg" alt="">
-                                <span>Insira um E-mail válido</span>
-                            </div>
-                        </div>
-                    
-                        <legend>Opções de matrícula</legend>
+                <legend>Informações do responsável</legend>
                         
-                        <label for="turno">Selecione o turno de estudo</label>
-                        <input type="radio" name="" id="turno">
+                    <div id="info-responsive">
+
+                        <div class="responsive">
+                            <label for="responsible">Nome do responsável</label>
+                            <input type="text" name="name of resposible" id="responsible" class="margin"
+                            value="Sonia De Souza">
+                            <small>Principal responsável legal e contato de emergência</small>
+
+                        </div>
+                        <div class="phone">
+                            <label for="telephone">Telefone</label>
+                            <input type="tel" name="telephone" id="telephone" class="margin"
+                            value="(10) 9 8765-4321">
+                        </div>     
+                       
+                       
+                            <label for="mail">Email</label>
+                            <input type="email" name="email" id="mail" 
+                            
+                            required>
+
+                            <div class="erro">
+                                <img src="./icons/alert-circle.svg" alt="">
+                                <span class="span">Insira um e-mail válido</span> 
+                            </div> 
+                              
+                    </div>
+                    
+                
                         
                 </fieldset>
                 </form>    

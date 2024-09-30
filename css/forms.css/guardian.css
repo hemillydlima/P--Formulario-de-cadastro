@@ -5,4 +5,20 @@
     }
     
 }
+.erro {
 
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--font-sm);
+        color: #DC2626;
+
+        margin-top: .25rem;
+        
+       
+
+}
+input:not(:focus):valid + .erro{
+    display: none;
+}

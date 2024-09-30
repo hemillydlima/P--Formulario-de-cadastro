@@ -30,6 +30,8 @@
     --heading2:700 24px/125% var(--font-family);
     --heading3:400 16px/150% var(--font-family);
     --heading4:700 16px/125% var(--font-family);
+    --font-sm:400 14px/140% var(--font-family)
+    
 }
 body{
    overflow: hidden;
@@ -38,4 +40,8 @@ body{
 }
 h1 ,h2{
     color: var(--text-primary);
+}
+
+.margin{
+    margin-bottom: 1.5rem;
 }
