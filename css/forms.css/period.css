@@ -9,10 +9,14 @@ legend + label{
 }
 .radio-all{
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(auto-fit ,minmax(7.5rem , 1fr));
+    gap: 1rem;
+    position: relative;
 
     & input , input:hover, input:focus{
         all: unset;
+        position: absolute;
+        
         
         
     }
@@ -22,40 +26,48 @@ legend + label{
     display: grid;
     border-radius: 8px ;
     border:2px solid var(--stroke-default);
-
-    margin: 8px;
-
     height: 128px;
 
-    text-align: center;
     justify-content:center ;
-    margin:  .5rem;
+   
+    
+    padding: 32px auto 48px;
+    inset: 0;
+
+
+
+    & label{
+        font: var(--heading3);
+        
+    }
 
 }
 .radio-inside-1 {
     display: grid;
+
     border-radius: 8px ;
     border:2px solid var(--stroke-default);
-
-    margin: 8px;
-
     height: 128px;
-
+   
     justify-content:center ;
-    text-align: center;
-    margin:  .5rem;
+    
+    padding: 2rem auto 1rem;
+    inset: 0;
+
+
+    & label{
+        font: var(--heading3);
+        
+    }
 
 }
 .radio-img{
     background-image: url(../../icons/circle.svg);
+     width: 1.5rem;
+     height: 1.5rem;
 
-    width: 24px;
-    height: 24px;
-    
-    position:relative;
+ 
 
 
-    display: flex;
-    
-    padding: 8px 224px auto;
+  
 }
