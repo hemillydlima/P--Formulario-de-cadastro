@@ -4,7 +4,7 @@
 legend + label{
     margin-top: 12px;
     margin-bottom: 1rem;
-
+    
     font: var(--font-sm);
 }
 .radio-all{
@@ -16,58 +16,80 @@ legend + label{
     & input , input:hover, input:focus{
         all: unset;
         position: absolute;
+        inset: 0;
+        size: cover;
+        
+        &:has(:checked){
+            background-color: red solid;
+        }
         
         
-        
-    }
-   
+    } 
+    
+}
+.radio-img{
+    border-radius: 100% ;
+    border: 2px solid var(--stroke-default);
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-97px);
+    margin-top: 4px;
+    inset: 0;
+    
+    
+    
 }
 .radio-inside{
     display: grid;
     border-radius: 8px ;
     border:2px solid var(--stroke-default);
     height: 128px;
-
+    
     justify-content:center ;
-   
+    
     
     padding: 32px auto 48px;
     inset: 0;
-
-
-
+    
+    
+    
     & label{
         font: var(--heading3);
         
     }
-
+    &:hover, &:focus-within{
+        border: solid 2px var(--stroke-highlight);
+      
+    }
+    
 }
 .radio-inside-1 {
     display: grid;
-
+    
     border-radius: 8px ;
     border:2px solid var(--stroke-default);
     height: 128px;
-   
+    
     justify-content:center ;
     
     padding: 2rem auto 1rem;
     inset: 0;
-
-
+    
+    
     & label{
         font: var(--heading3);
         
     }
-
+    
 }
-.radio-img{
+
+.radio-img-1{
     background-image: url(../../icons/circle.svg);
-     width: 1.5rem;
-     height: 1.5rem;
-
- 
-
-
-  
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-93px);
+    margin-top: 4px;
+    inset: 0;
+    
+    
 }

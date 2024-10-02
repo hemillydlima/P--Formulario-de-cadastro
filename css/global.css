@@ -34,7 +34,7 @@
     
 }
 body{
-   overflow: hidden;
+   overflow: auto;
    font-family: var(--font-family);
    
 }
