@@ -1,3 +1,4 @@
+@import url(./sport.css);
 .disble-2 + legend {
     font: 700 1rem/125% var(--font-family);
 }
