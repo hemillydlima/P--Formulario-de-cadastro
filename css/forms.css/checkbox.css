@@ -1,0 +1,47 @@
+.terms-all{
+    margin-top: 48px;
+    display: flex;
+    gap: 12px;
+
+    align-items: flex-start;
+
+    & label{
+        font: var(--heading3);
+    }
+
+    & strong{
+        color: var(--text-highlight);
+        font-weight: 500;
+    }
+
+   
+}
+
+.checkbox-all{
+    position: relative;
+
+    & [type="checkbox"]{
+        all: unset;
+
+        position: absolute;
+        inset: 0;
+    }
+    .checkbox-imagem{
+        flex: 0 0 1.5rem;
+        height: 1.5rem;
+
+        background-image: url(../../icons/square.svg);
+
+    }
+    &:hover , &:focus-within{
+
+        & .checkbox-imagem{
+        background-image: url(../../icons/square-hover.svg) ;
+        }
+    }
+    &:has(:checked){
+        & .checkbox-imagem{
+            background-image: url(../../icons/checkmark-square-01.svg);
+        }
+    }
+}

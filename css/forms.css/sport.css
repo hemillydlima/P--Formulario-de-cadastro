@@ -1,3 +1,4 @@
+@import url(./checkbox.css);
 .radio-all + label{
     margin: 24px auto 1rem ;
 }
